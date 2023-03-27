@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyJabken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8x-Bn-p7f">
+                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="eli-RE-pbu"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="じゃんけんをする！">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4YW-Bf-VDU"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mG2-iL-56j">
+                                <rect key="frame" x="0.0" y="36" width="414" height="678"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="これからじゃんけんをします！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGe-Ae-JOn">
+                                <rect key="frame" x="0.0" y="722" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nw9-lk-T5T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.50107483626082439" green="0.89000000000000001" blue="0.69928021871183799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MGe-Ae-JOn" firstAttribute="top" secondItem="mG2-iL-56j" secondAttribute="bottom" id="18Y-jl-tPi"/>
+                            <constraint firstItem="MGe-Ae-JOn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1cG-yK-MTR"/>
+                            <constraint firstItem="F8x-Bn-p7f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="AJ2-OS-oMm"/>
+                            <constraint firstItem="F8x-Bn-p7f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Dtp-h9-cIS"/>
+                            <constraint firstItem="F8x-Bn-p7f" firstAttribute="top" secondItem="MGe-Ae-JOn" secondAttribute="bottom" constant="106" id="Fi3-tO-IKa"/>
+                            <constraint firstItem="F8x-Bn-p7f" firstAttribute="top" secondItem="MGe-Ae-JOn" secondAttribute="bottom" id="GBm-ET-sOo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MGe-Ae-JOn" secondAttribute="trailing" id="HLH-He-Iky"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F8x-Bn-p7f" secondAttribute="bottom" id="Jlz-fP-faR"/>
+                            <constraint firstItem="mG2-iL-56j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="N97-oQ-rKw"/>
+                            <constraint firstItem="F8x-Bn-p7f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NRx-Qb-mdG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mG2-iL-56j" secondAttribute="trailing" id="UEA-Yq-6Io"/>
+                            <constraint firstItem="mG2-iL-56j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bVu-GS-UZL"/>
+                            <constraint firstItem="F8x-Bn-p7f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eOx-8i-OKQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F8x-Bn-p7f" secondAttribute="trailing" id="hhA-ma-fx8"/>
+                            <constraint firstItem="F8x-Bn-p7f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="m6F-am-Twx"/>
+                            <constraint firstItem="F8x-Bn-p7f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pId-h8-aah"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerImageView" destination="mG2-iL-56j" id="a6D-EE-CYd"/>
+                        <outlet property="answerLabel" destination="MGe-Ae-JOn" id="THZ-pe-e9P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

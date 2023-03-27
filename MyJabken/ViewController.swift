@@ -13,14 +13,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
-    
+    var answerNumber = 0
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var answerImageView: UIImageView!
     @IBAction func answerButton(_ sender: Any) {
         
-        var answerNumber = Int.random(in: 0...2)
+        answerNumber = Int.random(in: 0...2)
         var newAnswerNumber=0
         repeat{
             newAnswerNumber = Int.random(in:0...2)
